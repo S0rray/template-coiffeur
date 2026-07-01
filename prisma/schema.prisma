@@ -1,0 +1,42 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Reservation {
+  id         String   @id @default(cuid())
+  name       String
+  phone      String   @default("")
+  email      String
+  service    String
+  slot       String
+  date       String
+  notes      String   @default("")
+  status     String   @default("pending")
+  source     String   @default("online")
+  stylistId  String?
+  stylist    Stylist? @relation(fields: [stylistId], references: [id], onDelete: SetNull)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
+
+model Leave {
+  id        String   @id @default(cuid())
+  startDate String
+  endDate   String
+  note      String   @default("")
+  createdAt DateTime @default(now())
+}
+
+// services = JSON array of service IDs this stylist can perform, e.g. ["coupe","coloration"]
+model Stylist {
+  id           String        @id @default(cuid())
+  name         String
+  services     String        @default("[]")
+  createdAt    DateTime      @default(now())
+  reservations Reservation[]
+}
