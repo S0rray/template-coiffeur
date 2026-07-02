@@ -1,4 +1,5 @@
 import { SectionHeader } from '@/components/ui/SectionHeader'
+import { SiteImage } from '@/components/ui/SiteImage'
 
 const photos = [
   { id: 1, label: 'Coupe femme' },
@@ -31,31 +32,73 @@ export function Gallery() {
         {/* Grille desktop mosaïque / mobile 2 colonnes */}
         <div className="grid grid-cols-2 lg:grid-cols-4 lg:grid-rows-2 gap-3 lg:h-130">
           {/* Grande image gauche */}
-          <div className={`lg:row-span-2 rounded-sm overflow-hidden ${shades[0]} flex items-center justify-center aspect-square lg:aspect-auto`}>
-            <PhotoPlaceholder label={photos[0].label} index={1} />
+          <div className={`lg:row-span-2 relative rounded-sm overflow-hidden ${shades[0]} flex items-center justify-center aspect-square lg:aspect-auto`}>
+            <SiteImage
+              src="/images/gallery-1.jpg"
+              alt={photos[0].label}
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 50vw, 25vw"
+              fallback={<PhotoPlaceholder label={photos[0].label} index={1} />}
+            />
           </div>
 
           {/* Colonne milieu haut */}
-          <div className={`rounded-sm overflow-hidden ${shades[1]} flex items-center justify-center aspect-square lg:aspect-auto`}>
-            <PhotoPlaceholder label={photos[1].label} index={2} />
+          <div className={`relative rounded-sm overflow-hidden ${shades[1]} flex items-center justify-center aspect-square lg:aspect-auto`}>
+            <SiteImage
+              src="/images/gallery-2.jpg"
+              alt={photos[1].label}
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 50vw, 25vw"
+              fallback={<PhotoPlaceholder label={photos[1].label} index={2} />}
+            />
           </div>
 
           {/* Colonne milieu bas */}
-          <div className={`rounded-sm overflow-hidden ${shades[2]} flex items-center justify-center aspect-square lg:aspect-auto`}>
-            <PhotoPlaceholder label={photos[2].label} index={3} />
+          <div className={`relative rounded-sm overflow-hidden ${shades[2]} flex items-center justify-center aspect-square lg:aspect-auto`}>
+            <SiteImage
+              src="/images/gallery-3.jpg"
+              alt={photos[2].label}
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 50vw, 25vw"
+              fallback={<PhotoPlaceholder label={photos[2].label} index={3} />}
+            />
           </div>
 
           {/* Grande image droite */}
-          <div className={`lg:row-span-2 rounded-sm overflow-hidden ${shades[3]} flex items-center justify-center aspect-square lg:aspect-auto`}>
-            <PhotoPlaceholder label={photos[3].label} index={4} />
+          <div className={`lg:row-span-2 relative rounded-sm overflow-hidden ${shades[3]} flex items-center justify-center aspect-square lg:aspect-auto`}>
+            <SiteImage
+              src="/images/gallery-4.jpg"
+              alt={photos[3].label}
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 50vw, 25vw"
+              fallback={<PhotoPlaceholder label={photos[3].label} index={4} />}
+            />
           </div>
 
           {/* Ligne 2 milieu */}
-          <div className={`rounded-sm overflow-hidden ${shades[4]} flex items-center justify-center aspect-square lg:aspect-auto`}>
-            <PhotoPlaceholder label={photos[4].label} index={5} />
+          <div className={`relative rounded-sm overflow-hidden ${shades[4]} flex items-center justify-center aspect-square lg:aspect-auto`}>
+            <SiteImage
+              src="/images/gallery-5.jpg"
+              alt={photos[4].label}
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 50vw, 25vw"
+              fallback={<PhotoPlaceholder label={photos[4].label} index={5} />}
+            />
           </div>
-          <div className={`rounded-sm overflow-hidden ${shades[5]} flex items-center justify-center aspect-square lg:aspect-auto`}>
-            <PhotoPlaceholder label={photos[5].label} index={6} />
+          <div className={`relative rounded-sm overflow-hidden ${shades[5]} flex items-center justify-center aspect-square lg:aspect-auto`}>
+            <SiteImage
+              src="/images/gallery-6.jpg"
+              alt={photos[5].label}
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 50vw, 25vw"
+              fallback={<PhotoPlaceholder label={photos[5].label} index={6} />}
+            />
           </div>
         </div>
       </div>

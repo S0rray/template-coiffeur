@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { LegalLayout } from '@/components/ui/LegalLayout'
+import { photoCredits } from '@/lib/photo-credits'
 
 export const metadata: Metadata = {
   title: 'Mentions Légales',
@@ -40,6 +41,50 @@ Email : contact@elegance-salon.fr
 Courrier : ELEGANCE Salon — 12 Rue des Fleurs, 75001 Paris
 Horaires : Lun – Sam, 9h00 – 19h00`,
   },
+  ...(Object.keys(photoCredits).length > 0
+    ? [
+        {
+          heading: '6. Crédits photographiques',
+          body: (
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm border-collapse">
+                <thead>
+                  <tr className="border-b border-dark/10 text-left">
+                    <th className="pb-3 pr-4 font-semibold text-dark text-[13px]">Photo</th>
+                    <th className="pb-3 pr-4 font-semibold text-dark text-[13px]">Photographe</th>
+                    <th className="pb-3 pr-4 font-semibold text-dark text-[13px]">Source</th>
+                    <th className="pb-3 font-semibold text-dark text-[13px]">Licence</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {Object.entries(photoCredits).map(([, credit]) => (
+                    <tr key={credit.label} className="border-b border-dark/5">
+                      <td className="py-2.5 pr-4 text-sub">{credit.label}</td>
+                      <td className="py-2.5 pr-4 text-sub">{credit.author}</td>
+                      <td className="py-2.5 pr-4 text-sub">
+                        {credit.url ? (
+                          <a
+                            href={credit.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-dark underline underline-offset-2"
+                          >
+                            {credit.source}
+                          </a>
+                        ) : (
+                          credit.source
+                        )}
+                      </td>
+                      <td className="py-2.5 text-sub">{credit.license ?? '—'}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          ) as React.ReactNode,
+        },
+      ]
+    : []),
 ]
 
 export default function MentionsLegales() {

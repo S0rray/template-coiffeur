@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/Button'
 import { salon } from '@/lib/data'
+import { SiteImage } from '@/components/ui/SiteImage'
 
 export function Hero() {
   return (
@@ -26,16 +27,25 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Image placeholder */}
+        {/* Image */}
         <div className="w-full lg:w-[46%] aspect-4/5 max-h-155 rounded-sm overflow-hidden relative bg-dark-card flex items-center justify-center">
-          {/* Remplacer par <Image src="/images/hero.jpg" alt="Salon Élégance" fill className="object-cover" priority /> */}
-          <div className="text-center text-sub px-8">
-            <div className="w-12 h-12 rounded-full border border-sub/30 flex items-center justify-center mx-auto mb-3">
-              <span className="text-xl">📷</span>
-            </div>
-            <p className="text-sm">Photo du salon</p>
-            <p className="text-xs text-sub/60 mt-1">à remplacer</p>
-          </div>
+          <SiteImage
+            src="/images/hero.jpg"
+            alt="Salon Élégance"
+            fill
+            className="object-cover"
+            priority
+            sizes="(max-width: 1024px) 100vw, 46vw"
+            fallback={
+              <div className="text-center text-sub px-8">
+                <div className="w-12 h-12 rounded-full border border-sub/30 flex items-center justify-center mx-auto mb-3">
+                  <span className="text-xl">📷</span>
+                </div>
+                <p className="font-mono text-xs">hero.jpg</p>
+                <p className="text-xs text-sub/60 mt-1">public/images/</p>
+              </div>
+            }
+          />
           {/* Cadre décoratif */}
           <div className="absolute inset-4 border border-gold/20 rounded-sm pointer-events-none" />
         </div>

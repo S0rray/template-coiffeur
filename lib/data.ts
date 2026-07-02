@@ -53,10 +53,10 @@ export const services = [
 ]
 
 export const team = [
-  { name: 'Sophie Martin', role: 'Directrice & Coloriste' },
-  { name: 'Lucas Bernard', role: 'Expert en Coupe' },
-  { name: 'Emma Dubois', role: 'Spécialiste Mariages' },
-  { name: 'Thomas Petit', role: 'Barbier & Styliste' },
+  { name: 'Sophie Martin', role: 'Directrice & Coloriste', slug: 'sophie-martin' },
+  { name: 'Lucas Bernard', role: 'Expert en Coupe',        slug: 'lucas-bernard' },
+  { name: 'Emma Dubois',   role: 'Spécialiste Mariages',   slug: 'emma-dubois' },
+  { name: 'Thomas Petit',  role: 'Barbier & Styliste',     slug: 'thomas-petit' },
 ]
 
 export const timeSlots: Record<string, string[]> = {
