@@ -1,29 +1,29 @@
 'use client'
 
 import { useState } from 'react'
-import Image from 'next/image'
 
 interface SiteImageProps {
   src: string
   alt: string
   fallback: React.ReactNode
+  // kept for API compatibility with next/image props — not used
   fill?: boolean
   className?: string
-  priority?: boolean
   sizes?: string
+  priority?: boolean
 }
 
-export function SiteImage({ src, alt, fallback, fill, className, priority, sizes }: SiteImageProps) {
+export function SiteImage({ src, alt, fallback, priority }: SiteImageProps) {
   const [failed, setFailed] = useState(false)
   if (failed) return <>{fallback}</>
   return (
-    <Image
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
       src={src}
       alt={alt}
-      fill={fill}
-      className={className}
-      priority={priority}
-      sizes={sizes}
+      className="absolute inset-0 w-full h-full object-cover"
+      loading={priority ? 'eager' : 'lazy'}
+      decoding={priority ? 'sync' : 'async'}
       onError={() => setFailed(true)}
     />
   )

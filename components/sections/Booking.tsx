@@ -108,6 +108,7 @@ export function Booking() {
             key={formKey}
             className="flex-1 bg-dark-card rounded-sm p-7 md:p-9 flex flex-col gap-6"
             onSubmit={handleSubmit}
+            suppressHydrationWarning
           >
             {submitted && (
               <div className="bg-emerald-400/10 border border-emerald-400/20 rounded-sm px-4 py-3 text-sm text-emerald-400">
@@ -130,6 +131,7 @@ export function Booking() {
                   onChange={handleServiceChange}
                   required
                   className="w-full bg-dark-field border border-white/10 rounded-sm px-4 py-3.5 pr-10 text-sm text-nav focus:outline-none focus:border-gold/50 transition-colors appearance-none cursor-pointer"
+                  suppressHydrationWarning
                 >
                   <option value="">Service souhaité *</option>
                   {services.map((s) => (
@@ -160,6 +162,7 @@ export function Booking() {
                   ? 'opacity-50 cursor-not-allowed'
                   : 'hover:bg-gold/90 active:scale-[0.99]'
               }`}
+              suppressHydrationWarning
             >
               {submitting ? 'Envoi en cours…' : 'Confirmer ma réservation'}
             </button>
@@ -427,6 +430,7 @@ function Field(props: React.InputHTMLAttributes<HTMLInputElement>) {
     <input
       {...props}
       className="w-full bg-dark-field border border-white/10 rounded-sm px-4 py-3.5 text-sm text-nav placeholder:text-sub focus:outline-none focus:border-gold/50 transition-colors"
+      suppressHydrationWarning
     />
   )
 }
