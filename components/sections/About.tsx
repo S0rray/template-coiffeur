@@ -4,7 +4,7 @@ import { SiteImage } from '@/components/ui/SiteImage'
 
 export function About() {
   return (
-    <section id="propos" className="bg-white py-24 px-6 md:px-10 lg:px-16">
+    <section id="propos" className="bg-cream py-24 px-6 md:px-10 lg:px-16">
       <div className="max-w-360 mx-auto flex flex-col lg:flex-row items-center gap-14 lg:gap-20">
         {/* Image */}
         <div className="w-full lg:w-[46%] aspect-4/5 max-h-145 shrink-0 relative rounded-sm overflow-hidden bg-cream-alt flex items-center justify-center">

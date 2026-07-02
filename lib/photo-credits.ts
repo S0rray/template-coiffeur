@@ -44,100 +44,100 @@ export type PhotoCredit = {
 
 export const photoCredits: Record<string, PhotoCredit> = {
 
-  // 'hero.jpg': {
-  //   label: 'Photo principale — Salon Élégance',
-  //   author: 'Prénom Nom',
-  //   source: 'Unsplash',
-  //   url: 'https://unsplash.com/photos/xxxxxxx',
-  //   license: 'Unsplash License',
-  // },
+  'hero.jpg': {
+    label: 'Photo principale — Salon Élégance',
+    author: 'Sergey Mosin',
+    source: 'Unsplash',
+    url: 'https://unsplash.com/fr/@msv84msk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
+    license: 'Unsplash License',
+  },
 
-  // 'about.jpg': {
-  //   label: 'Photo section À Propos',
-  //   author: 'Prénom Nom',
-  //   source: 'Unsplash',
-  //   url: 'https://unsplash.com/photos/xxxxxxx',
-  //   license: 'Unsplash License',
-  // },
+  'about.jpg': {
+    label: 'Photo section À Propos',
+    author: 'Benyamin Bohlouli',
+    source: 'Unsplash',
+    url: 'https://unsplash.com/fr/@benyamin_bohlouli?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
+    license: 'Unsplash License',
+  },
 
-  // 'gallery-1.jpg': {
-  //   label: 'Galerie — Coupe femme',
-  //   author: 'Prénom Nom',
-  //   source: 'Unsplash',
-  //   url: 'https://unsplash.com/photos/xxxxxxx',
-  //   license: 'Unsplash License',
-  // },
+  'gallery-1.jpg': {
+    label: 'Galerie — Coupe femme',
+    author: 'Christian Werther',
+    source: 'Unsplash',
+    url: 'https://unsplash.com/fr/@rehtrew?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
+    license: 'Unsplash License',
+  },
 
-  // 'gallery-2.jpg': {
-  //   label: 'Galerie — Coloration',
-  //   author: 'Prénom Nom',
-  //   source: 'Unsplash',
-  //   url: 'https://unsplash.com/photos/xxxxxxx',
-  //   license: 'Unsplash License',
-  // },
+  'gallery-2.jpg': {
+    label: 'Galerie — Coloration',
+    author: 'Toa Heftiba',
+    source: 'Unsplash',
+    url: 'https://unsplash.com/fr/@heftiba?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
+    license: 'Unsplash License',
+  },
 
-  // 'gallery-3.jpg': {
-  //   label: 'Galerie — Balayage',
-  //   author: 'Prénom Nom',
-  //   source: 'Unsplash',
-  //   url: 'https://unsplash.com/photos/xxxxxxx',
-  //   license: 'Unsplash License',
-  // },
+  'gallery-3.jpg': {
+    label: 'Galerie — Balayage',
+    author: 'Let\'s Transform Salon',
+    source: 'Unsplash',
+    url: 'https://unsplash.com/fr/@letstransformsalonlts?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
+    license: 'Unsplash License',
+  },
 
-  // 'gallery-4.jpg': {
-  //   label: 'Galerie — Coiffure mariée',
-  //   author: 'Prénom Nom',
-  //   source: 'Unsplash',
-  //   url: 'https://unsplash.com/photos/xxxxxxx',
-  //   license: 'Unsplash License',
-  // },
+  'gallery-4.jpg': {
+    label: 'Galerie — Coiffure mariée',
+    author: 'Enis Yavuz',
+    source: 'Unsplash',
+    url: 'https://unsplash.com/fr/@enisyavuz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
+    license: 'Unsplash License',
+  },
 
-  // 'gallery-5.jpg': {
-  //   label: 'Galerie — Soin kératine',
-  //   author: 'Prénom Nom',
-  //   source: 'Unsplash',
-  //   url: 'https://unsplash.com/photos/xxxxxxx',
-  //   license: 'Unsplash License',
-  // },
+  'gallery-5.jpg': {
+    label: 'Galerie — Coiffure femme ondulée',
+    author: 'Giorgio Trovato',
+    source: 'Unsplash',
+    url: 'https://unsplash.com/fr/@giorgiotrovato?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
+    license: 'Unsplash License',
+  },
 
-  // 'gallery-6.jpg': {
-  //   label: 'Galerie — Coupe homme',
-  //   author: 'Prénom Nom',
-  //   source: 'Unsplash',
-  //   url: 'https://unsplash.com/photos/xxxxxxx',
-  //   license: 'Unsplash License',
-  // },
+  'gallery-6.jpg': {
+    label: 'Galerie — Coupe homme',
+    author: 'André Reis',
+    source: 'Unsplash',
+    url: 'https://unsplash.com/fr/@andrereispt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
+    license: 'Unsplash License',
+  },
 
-  // 'team-sophie-martin.jpg': {
-  //   label: 'Équipe — Sophie Martin',
-  //   author: 'Prénom Nom',
-  //   source: 'Unsplash',
-  //   url: 'https://unsplash.com/photos/xxxxxxx',
-  //   license: 'Unsplash License',
-  // },
+  'team-sophie-martin.jpg': {
+    label: 'Équipe — Sophie Martin',
+    author: 'Adam Winger',
+    source: 'Unsplash',
+    url: 'https://unsplash.com/fr/@awcreativeut?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
+    license: 'Unsplash License',
+  },
 
-  // 'team-lucas-bernard.jpg': {
-  //   label: 'Équipe — Lucas Bernard',
-  //   author: 'Prénom Nom',
-  //   source: 'Unsplash',
-  //   url: 'https://unsplash.com/photos/xxxxxxx',
-  //   license: 'Unsplash License',
-  // },
+  'team-lucas-bernard.jpg': {
+    label: 'Équipe — Lucas Bernard',
+    author: 'Salah Regouane',
+    source: 'Unsplash',
+    url: 'https://unsplash.com/fr/@salaheregouane?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
+    license: 'Unsplash License',
+  },
 
-  // 'team-emma-dubois.jpg': {
-  //   label: 'Équipe — Emma Dubois',
-  //   author: 'Prénom Nom',
-  //   source: 'Unsplash',
-  //   url: 'https://unsplash.com/photos/xxxxxxx',
-  //   license: 'Unsplash License',
-  // },
+  'team-emma-dubois.jpg': {
+    label: 'Équipe — Emma Dubois',
+    author: 'Vinicius "amnx" Amano',
+    source: 'Unsplash',
+    url: 'https://unsplash.com/fr/@viniciusamano?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
+    license: 'Unsplash License',
+  },
 
-  // 'team-thomas-petit.jpg': {
-  //   label: 'Équipe — Thomas Petit',
-  //   author: 'Prénom Nom',
-  //   source: 'Unsplash',
-  //   url: 'https://unsplash.com/photos/xxxxxxx',
-  //   license: 'Unsplash License',
-  // },
+  'team-thomas-petit.jpg': {
+    label: 'Équipe — Thomas Petit',
+    author: 'Jeppe Mønster',
+    source: 'Unsplash',
+    url: 'https://unsplash.com/fr/@jeppemoenster?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText',
+    license: 'Unsplash License',
+  },
 
 }

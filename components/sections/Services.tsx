@@ -3,7 +3,7 @@ import { services } from '@/lib/data'
 
 export function Services() {
   return (
-    <section id="services" className="bg-cream py-24 px-6 md:px-10 lg:px-16">
+    <section id="services" className="bg-white py-24 px-6 md:px-10 lg:px-16">
       <div className="max-w-360 mx-auto">
         <SectionHeader
           label="Nos Prestations"
@@ -19,7 +19,7 @@ export function Services() {
               className="bg-white rounded-sm overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col"
             >
               {/* Accent or doré */}
-              <div className="h-[3px] bg-gold" />
+              <div className="h-0.75 bg-gold" />
 
               <div className="p-7 flex flex-col flex-1">
                 {/* Icône placeholder */}
