@@ -43,7 +43,7 @@ Ces données sont collectées avec votre consentement explicite.`,
 • Droit d'opposition au traitement
 • Droit à la portabilité de vos données
 
-Pour exercer ces droits : dpo@elegance-salon.fr
+Pour exercer ces droits : contact@o-code.fr
 Vous pouvez également saisir la CNIL : www.cnil.fr`,
   },
 ]

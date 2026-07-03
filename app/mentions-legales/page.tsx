@@ -14,13 +14,13 @@ const sections = [
 12 Rue des Fleurs, 75001 Paris, France
 SIREN : 123 456 789  •  APE : 9602A
 Directrice de publication : Sophie Martin
-Tél. : +33 1 23 45 67 89  •  contact@elegance-salon.fr`,
+Tél. : +33 1 23 45 67 89  •  contact@o-code.fr`,
   },
   {
     heading: '2. Hébergement',
-    body: `Ce site est hébergé par Vercel Inc.
-340 Pine Street, Suite 900, San Francisco, CA 94104, USA
-Site : www.vercel.com  •  Contact : privacy@vercel.com`,
+    body: `Ce site est hébergé par Infomaniak Network SA
+Rue Eugène-Marziano 25, 1227 Les Acacias, Genève, Suisse
+Site : www.infomaniak.com  •  Contact : support@infomaniak.com`,
   },
   {
     heading: '3. Propriété intellectuelle',
@@ -37,7 +37,7 @@ La responsabilité d'ELEGANCE Salon ne saurait être engagée en cas d'interrupt
   {
     heading: '5. Contact',
     body: `Pour toute question relative au contenu de ce site :
-Email : contact@elegance-salon.fr
+Email : contact@o-code.fr
 Courrier : ELEGANCE Salon — 12 Rue des Fleurs, 75001 Paris
 Horaires : Lun – Sam, 9h00 – 19h00`,
   },

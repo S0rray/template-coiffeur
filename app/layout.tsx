@@ -6,6 +6,7 @@ import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000'),
   title: {
     default: 'Élégance — Salon de Coiffure Paris',
     template: '%s | Élégance Salon',
@@ -13,6 +14,11 @@ export const metadata: Metadata = {
   description:
     'Salon de coiffure haut de gamme au cœur de Paris. Coupes, colorations, soins et coiffures mariage par des experts passionnés.',
   keywords: ['salon de coiffure', 'coiffeur Paris', 'coloration', 'coupe', 'mariage'],
+  // Site de démo — pas d'indexation
+  robots: {
+    index: false,
+    follow: false,
+  },
   openGraph: {
     siteName: 'Élégance Salon',
     locale: 'fr_FR',
