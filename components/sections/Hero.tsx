@@ -14,7 +14,7 @@ export function Hero() {
         <div className="flex-1 max-w-xl">
           <div className="w-16 h-0.5 bg-gold mb-8" />
           <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-bold text-cream leading-tight mb-6">
-            L'Art du<br />
+            L&apos;Art du<br />
             <span className="text-gold">Cheveu</span>
           </h1>
           <p className="text-base md:text-lg text-sub leading-relaxed mb-10 max-w-md">
@@ -30,7 +30,7 @@ export function Hero() {
         {/* Image */}
         <div className="w-full lg:w-[46%] aspect-4/5 max-h-155 rounded-sm overflow-hidden relative bg-dark-card flex items-center justify-center">
           <SiteImage
-            src="/images/hero.jpg"
+            src="/images/hero.webp"
             alt="Salon Élégance"
             fill
             className="object-cover"
@@ -41,7 +41,7 @@ export function Hero() {
                 <div className="w-12 h-12 rounded-full border border-sub/30 flex items-center justify-center mx-auto mb-3">
                   <span className="text-xl">📷</span>
                 </div>
-                <p className="font-mono text-xs">hero.jpg</p>
+                <p className="font-mono text-xs">hero.webp</p>
                 <p className="text-xs text-sub/60 mt-1">public/images/</p>
               </div>
             }

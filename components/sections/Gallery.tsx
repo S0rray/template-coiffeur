@@ -34,7 +34,7 @@ export function Gallery() {
           {/* Grande image gauche */}
           <div className={`lg:row-span-2 relative rounded-sm overflow-hidden ${shades[0]} flex items-center justify-center aspect-square lg:aspect-auto`}>
             <SiteImage
-              src="/images/gallery-1.jpg"
+              src="/images/gallery-1.webp"
               alt={photos[0].label}
               fill
               className="object-cover"
@@ -46,7 +46,7 @@ export function Gallery() {
           {/* Colonne milieu haut */}
           <div className={`relative rounded-sm overflow-hidden ${shades[1]} flex items-center justify-center aspect-square lg:aspect-auto`}>
             <SiteImage
-              src="/images/gallery-2.jpg"
+              src="/images/gallery-2.webp"
               alt={photos[1].label}
               fill
               className="object-cover"
@@ -58,7 +58,7 @@ export function Gallery() {
           {/* Colonne milieu bas */}
           <div className={`relative rounded-sm overflow-hidden ${shades[2]} flex items-center justify-center aspect-square lg:aspect-auto`}>
             <SiteImage
-              src="/images/gallery-3.jpg"
+              src="/images/gallery-3.webp"
               alt={photos[2].label}
               fill
               className="object-cover"
@@ -70,7 +70,7 @@ export function Gallery() {
           {/* Grande image droite */}
           <div className={`lg:row-span-2 relative rounded-sm overflow-hidden ${shades[3]} flex items-center justify-center aspect-square lg:aspect-auto`}>
             <SiteImage
-              src="/images/gallery-4.jpg"
+              src="/images/gallery-4.webp"
               alt={photos[3].label}
               fill
               className="object-cover"
@@ -82,7 +82,7 @@ export function Gallery() {
           {/* Ligne 2 milieu */}
           <div className={`relative rounded-sm overflow-hidden ${shades[4]} flex items-center justify-center aspect-square lg:aspect-auto`}>
             <SiteImage
-              src="/images/gallery-5.jpg"
+              src="/images/gallery-5.webp"
               alt={photos[4].label}
               fill
               className="object-cover"
@@ -92,7 +92,7 @@ export function Gallery() {
           </div>
           <div className={`relative rounded-sm overflow-hidden ${shades[5]} flex items-center justify-center aspect-square lg:aspect-auto`}>
             <SiteImage
-              src="/images/gallery-6.jpg"
+              src="/images/gallery-6.webp"
               alt={photos[5].label}
               fill
               className="object-cover"

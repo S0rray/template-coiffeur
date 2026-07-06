@@ -8,18 +8,18 @@
  *
  * Dossier : public/images/
  *
- *   hero.jpg                  → Section Accueil (photo principale à droite)
- *   about.jpg                 → Section À Propos (photo à gauche)
- *   gallery-1.jpg             → Galerie — Coupe femme      (grande gauche)
- *   gallery-2.jpg             → Galerie — Coloration        (milieu haut)
- *   gallery-3.jpg             → Galerie — Balayage          (milieu bas)
- *   gallery-4.jpg             → Galerie — Coiffure mariée  (grande droite)
- *   gallery-5.jpg             → Galerie — Soin kératine    (ligne 2 milieu)
- *   gallery-6.jpg             → Galerie — Coupe homme      (ligne 2 milieu)
- *   team-sophie-martin.jpg    → Équipe — Sophie Martin
- *   team-lucas-bernard.jpg    → Équipe — Lucas Bernard
- *   team-emma-dubois.jpg      → Équipe — Emma Dubois
- *   team-thomas-petit.jpg     → Équipe — Thomas Petit
+ *   hero.webp                  → Section Accueil (photo principale à droite)
+ *   about.webp                 → Section À Propos (photo à gauche)
+ *   gallery-1.webp             → Galerie — Coupe femme      (grande gauche)
+ *   gallery-2.webp             → Galerie — Coloration        (milieu haut)
+ *   gallery-3.webp             → Galerie — Balayage          (milieu bas)
+ *   gallery-4.webp             → Galerie — Coiffure mariée  (grande droite)
+ *   gallery-5.webp             → Galerie — Soin kératine    (ligne 2 milieu)
+ *   gallery-6.webp             → Galerie — Coupe homme      (ligne 2 milieu)
+ *   team-sophie-martin.webp    → Équipe — Sophie Martin
+ *   team-lucas-bernard.webp    → Équipe — Lucas Bernard
+ *   team-emma-dubois.webp      → Équipe — Emma Dubois
+ *   team-thomas-petit.webp     → Équipe — Thomas Petit
  *
  * Les formats acceptés : .jpg .jpeg .png .webp .avif
  * (remplacez l'extension dans le nom si nécessaire)
@@ -44,7 +44,7 @@ export type PhotoCredit = {
 
 export const photoCredits: Record<string, PhotoCredit> = {
 
-  'hero.jpg': {
+  'hero.webp': {
     label: 'Photo principale — Salon Élégance',
     author: 'Sergey Mosin',
     source: 'Unsplash',
@@ -52,7 +52,7 @@ export const photoCredits: Record<string, PhotoCredit> = {
     license: 'Unsplash License',
   },
 
-  'about.jpg': {
+  'about.webp': {
     label: 'Photo section À Propos',
     author: 'Benyamin Bohlouli',
     source: 'Unsplash',
@@ -60,7 +60,7 @@ export const photoCredits: Record<string, PhotoCredit> = {
     license: 'Unsplash License',
   },
 
-  'gallery-1.jpg': {
+  'gallery-1.webp': {
     label: 'Galerie — Coupe femme',
     author: 'Christian Werther',
     source: 'Unsplash',
@@ -68,7 +68,7 @@ export const photoCredits: Record<string, PhotoCredit> = {
     license: 'Unsplash License',
   },
 
-  'gallery-2.jpg': {
+  'gallery-2.webp': {
     label: 'Galerie — Coloration',
     author: 'Toa Heftiba',
     source: 'Unsplash',
@@ -76,7 +76,7 @@ export const photoCredits: Record<string, PhotoCredit> = {
     license: 'Unsplash License',
   },
 
-  'gallery-3.jpg': {
+  'gallery-3.webp': {
     label: 'Galerie — Balayage',
     author: 'Let\'s Transform Salon',
     source: 'Unsplash',
@@ -84,7 +84,7 @@ export const photoCredits: Record<string, PhotoCredit> = {
     license: 'Unsplash License',
   },
 
-  'gallery-4.jpg': {
+  'gallery-4.webp': {
     label: 'Galerie — Coiffure mariée',
     author: 'Enis Yavuz',
     source: 'Unsplash',
@@ -92,7 +92,7 @@ export const photoCredits: Record<string, PhotoCredit> = {
     license: 'Unsplash License',
   },
 
-  'gallery-5.jpg': {
+  'gallery-5.webp': {
     label: 'Galerie — Coiffure femme ondulée',
     author: 'Giorgio Trovato',
     source: 'Unsplash',
@@ -100,7 +100,7 @@ export const photoCredits: Record<string, PhotoCredit> = {
     license: 'Unsplash License',
   },
 
-  'gallery-6.jpg': {
+  'gallery-6.webp': {
     label: 'Galerie — Coupe homme',
     author: 'André Reis',
     source: 'Unsplash',
@@ -108,7 +108,7 @@ export const photoCredits: Record<string, PhotoCredit> = {
     license: 'Unsplash License',
   },
 
-  'team-sophie-martin.jpg': {
+  'team-sophie-martin.webp': {
     label: 'Équipe — Sophie Martin',
     author: 'Adam Winger',
     source: 'Unsplash',
@@ -116,7 +116,7 @@ export const photoCredits: Record<string, PhotoCredit> = {
     license: 'Unsplash License',
   },
 
-  'team-lucas-bernard.jpg': {
+  'team-lucas-bernard.webp': {
     label: 'Équipe — Lucas Bernard',
     author: 'Salah Regouane',
     source: 'Unsplash',
@@ -124,7 +124,7 @@ export const photoCredits: Record<string, PhotoCredit> = {
     license: 'Unsplash License',
   },
 
-  'team-emma-dubois.jpg': {
+  'team-emma-dubois.webp': {
     label: 'Équipe — Emma Dubois',
     author: 'Vinicius "amnx" Amano',
     source: 'Unsplash',
@@ -132,7 +132,7 @@ export const photoCredits: Record<string, PhotoCredit> = {
     license: 'Unsplash License',
   },
 
-  'team-thomas-petit.jpg': {
+  'team-thomas-petit.webp': {
     label: 'Équipe — Thomas Petit',
     author: 'Jeppe Mønster',
     source: 'Unsplash',

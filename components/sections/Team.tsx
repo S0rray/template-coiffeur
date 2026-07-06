@@ -17,7 +17,7 @@ export function Team() {
             <article key={member.name} className="flex flex-col">
               <div className="aspect-3/4 relative rounded-sm overflow-hidden bg-cream-alt flex items-center justify-center mb-4">
                 <SiteImage
-                  src={`/images/team-${member.slug}.jpg`}
+                  src={`/images/team-${member.slug}.webp`}
                   alt={member.name}
                   fill
                   className="object-cover"
@@ -27,7 +27,7 @@ export function Team() {
                       <div className="w-14 h-14 rounded-full bg-sub/20 mx-auto mb-2 flex items-center justify-center">
                         <span className="font-serif text-2xl text-sub/50">{member.name[0]}</span>
                       </div>
-                      <p className="font-mono text-xs">team-{member.slug}.jpg</p>
+                      <p className="font-mono text-xs">team-{member.slug}.webp</p>
                     </div>
                   }
                 />
