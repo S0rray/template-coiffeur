@@ -1,5 +1,10 @@
 generator client {
-  provider = "prisma-client-js"
+  provider      = "prisma-client-js"
+  // "native" = ton PC Windows (dev local)
+  // debian-openssl-3.0.x = VPS Debian/Ubuntu récent (le plus courant)
+  // debian-openssl-1.1.x = VPS Debian/Ubuntu plus ancien
+  // Si le VPS tourne sur Alpine ou RHEL/CentOS, dis-le pour ajuster cette liste.
+  binaryTargets = ["native", "debian-openssl-3.0.x", "debian-openssl-1.1.x"]
 }
 
 datasource db {
